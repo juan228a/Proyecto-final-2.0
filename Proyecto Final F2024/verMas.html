@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="verMas.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+               
+                </div>
+
+                <div class="container-logo">
+                
+                    <h1 class="logo"><a href="/">Prest-AR</a></h1>
+                </div>
+
+                <div class="container-user">
+                  
+                    <i class="fa-solid fa-user"></i>
+                    <span class="logIn"><a href="logIn.html">Log In</a></span>
+                    <span class="signUp"><a href="">Sign In</a></span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a  href="#">Politica de Seguridad</a></li>
+                    <li><a href="aboutUs.html">Acerca de Nosotros</a></li>
+                    <li><a href="#">Contactame</a></li>
+                    
+                </ul>
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+<br><br>
+<section class="contenido">
+    <div class="mostrador" id="mostrador">
+        <div class="fila">
+            <div class="item" onclick="cargar(this)">
+                <div class="contenedor-foto">
+                    <img src="imagenes/amoladora.png" alt="">
+                </div>
+                <p class="descripcion">AMOLADORA BOSCH</p>
+                <span class="precio">$ 30.000</span>
+            </div>
+            <div class="item" onclick="cargar(this)">
+                <div class="contenedor-foto">
+                    <img src="imagenes/cintametrica.png" alt="">
+                </div>
+                <p class="descripcion" id>CINTA METRICA 10MTS </p>
+                <span class="precio">$ 1.800</span>
+            </div>
+            <div class="item" onclick="cargar(this)">
+                <div class="contenedor-foto">
+                    <img src="imagenes/Martillo.png" alt="">
+                </div>
+                <p class="descripcion">MARTILLO
+                </p>
+                <span class="precio">$ 3.600</span>
+            </div>
+            <div class="item" onclick="cargar(this)">
+                <div class="contenedor-foto">
+                    <img src="imagenes/nivel-de-burbuja.png" alt="">
+                </div>
+                <p class="descripcion">NIVEL DE BURBUJA</p>
+                <span class="precio">$ 1.800</span>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item" onclick="cargar(this)">
+                <div class="contenedor-foto">
+                    <img src="imagenes/pinza.pmg.jpg" alt="">
+                </div>
+                <p class="descripcion">PINZA</p>
+                <span class="precio">$ 1500</span>
+            </div>
+            <div class="item" onclick="cargar(this)">
+                <div class="contenedor-foto">
+                    <img src="imagenes/plano.png" alt="">
+                </div>
+                <p class="descripcion">PLANO STANLEY</p>
+                <span class="precio">$ 2.000</span>
+            </div>
+            <div class="item" onclick="cargar(this)">
+                <div class="contenedor-foto">
+                    <img src="imagenes/sierraelectrica.png" alt="">
+                </div>
+                <p class="descripcion">SIERRA ELECTRICA BOSCH</p>
+                <span class="precio">$ 40.000</span>
+            </div>
+            <div class="item" onclick="cargar(this)">
+                <div class="contenedor-foto">
+                    <img src="imagenes/taladro.png "alt="">
+                </div>
+                <p class="descripcion">TALADRO ELECTRICO PERCUTOR</p>
+                <span class="precio">$ 25.000</span>
+            </div>
+        </div> 
+    </div>
+    <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+    <div class="seleccion" id="seleccion">
+        <div class="cerrar" onclick="cerrar()">
+            &#x2715
+        </div>
+        <div class="info">
+            <img src="img/1.png" alt="" id="img">
+            <h2 id="modelo">NIKE MODEL 1</h2>
+            <p id="descripcion">Descripción Modelo 1</p>
+
+            <span class="precio" id="precio">$ 130</span>
+
+            <div class="fila">
+                <div class="size">
+                    <label for="">Dias</label>
+                    <select name="" id="">
+                        <option value="">3</option>
+                        <option value="">6</option>
+                        <option value="">15</option>
+                        <option value="">30</option>
+                    </select>
+                </div>
+                <button>AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+    </div>
+</section>
+    <script
+    src="https://kit.fontawesome.com/81581fb069.js"
+    crossorigin="anonymous"
+></script>
+
+<script src="script.js">
+
+</script>
+</body>
+</html>
