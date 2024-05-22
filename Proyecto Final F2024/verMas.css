@@ -61,9 +61,7 @@ html {
 	gap: 0.5rem;
 }
 
-.container-logo i {
-	font-size: 3rem;
-}
+
 
 .container-logo h1 a {
 	text-decoration: none;
@@ -71,12 +69,6 @@ html {
 	font-size: 3rem;
 	text-transform: uppercase;
 	letter-spacing: -1px;
-}
-
-.container-user {
-	display: flex;
-	gap: 1rem;
-	cursor: pointer;
 }
 
 .container-user .fa-user {
@@ -504,6 +496,20 @@ html {
     color: #fff;
     background-color: #f85151;
 } 
+
+#map {
+	height: 500px;
+	width: 50%;
+	display: flex;
+	margin-left: 500px;
+}
+.foot {
+	background-color: #333; /* Color de fondo */
+	color: #809671; /* Color del texto */
+	text-align: center; /* Alineación del texto */
+	padding: 20px 0; /* Espaciado interno */
+	font-size: 20px;
+}
 
 /* Responsive styles */
 @media (max-width: 1200px) {
