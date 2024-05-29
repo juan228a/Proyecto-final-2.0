@@ -18,6 +18,32 @@ html {
 	box-sizing: border-box;
 }
 
+/* Add your custom styles for responsiveness here */
+        /* Example media query for adjusting layout for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .container-navbar {
+                text-align: center;
+            }
+            .menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu li {
+                margin-bottom: 10px;
+            }
+        }
+        /* Adjustments for smaller screens for the profile picture section */
+        @media only screen and (max-width: 600px) {
+            .circle-container {
+                text-align: center;
+            }
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
 /* ********************************** */
 /*             UTILIDADES             */
 /* ********************************** */
@@ -246,6 +272,48 @@ html {
 
 
 
+  /* Estilos para el chat */
+  #chat-container {
+	  background-color: #809671;
+	  border-radius: 0.8rem;
+	  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+	  width: 30rem;
+	  max-width: 100%;
+	  overflow: hidden;
+  }
+
+  #chat-messages {
+	  padding: 1rem;
+	  max-height: 30rem;
+	  overflow-y: auto;
+  }
+
+  #chat-messages1 {
+	width: 30rem;
+	height: 2.8rem;
+	max-width: 100%;
+  }
+
+  #chat-messages p {
+	  margin: 0.5rem 0;
+  }
+
+  #user-input {
+	  width: calc(100% - 20px);
+	  padding: 1rem;
+	  border: none;
+	  border-top: 0.1rem solid #ddd;
+	  font-size: 16px;
+	  outline: none;
+  }
+
+  #user-input::placeholder {
+	  color: #999;
+  }
+
+  #user-input:focus {
+	  border-top-color: #007bff;
+  }
   
 
 
